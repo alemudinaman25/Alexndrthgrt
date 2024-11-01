@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body {
+    
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #250821;
+    color: white;
+   
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: large;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: tomato;
+}
+.home-section {
+    display: flex;
+    align-items: center;
+    padding: 100px 20px;
+}
+
+.home-content {
+    display: flex;
+    width: 100%;
+}
+
+.home-text {
+    flex: 1; /* Take up remaining space */
+}
+.home-text span{
+    color: #0ef;
+}
+
+.home-image {
+    width: 40%; /* Adjust this value as needed */
+    margin-left: 10px; /* Space between text and image */
+  margin-top: 70px;
+  margin-right: 50px;
+     
+    border-radius: 100px; /* Optional: rounded corners */
+}
+
+.home-buttons{
+    margin-top: 20px;
+    border-width: 600px;
+    border-radius: 600px;
+}
+.home-buttons:hover{
+    color: aqua;
+}
+
+ h1,h2,p{
+    margin-left: 100px;
+     
+ }
+ .social-media {
+    margin-top: 30px; /* Space above social media icons */
+}
+
+.social-icon {
+    font-size: 24px; /* Icon size */
+    color: white; /* Icon color */
+    margin: 0 10px; /* Space between icons */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.social-icon:hover {
+    color: #000; /* Change color on hover (black) */
+}
+ 
+.about-section, .services-section, .skills-section, .portfolio-section, .contact-section {
+    padding: 50px 20px;
+}
+.about-section {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    padding: 60px 20px; /* Add padding around the section */
+    background-color:  #250821 ; /* Light background color for contrast */
+}
+
+.about-content {
+    display: flex;
+    width: 100%;
+}
+
+.about-image {
+    width: 40%; /* Adjust this value as needed */
+    border-radius: 80px; /* Optional: rounded corners */
+    margin-right: 20px; /* Space between image and text */
+}
+
+.about-text {
+    flex: 1; /* Take up remaining space */
+}
+
+.about-button {
+    margin-top: 20px; /* Space above button */
+    padding: 10px 20px; /* Button padding */
+    font-size: 16px; /* Button font size */
+    color: white; /* Button text color */
+    background-color: #0ef; /* Button background color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.about-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.skills-section {
+    display: flex;
+    justify-content: space-around; /* Space out the skills evenly */
+    padding: 60px 20px; /* Add padding around the section */
+    background-color:  #250821 ; /* Light background color */
+}
+
+.skill {
+    background-color:  #292e33; /* Background color for each skill card */
+    border: 2px solid #007bff; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside each skill card */
+    width: 30%; /* Width of each skill card */
+    text-align: center; /* Center align text */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.skill:hover {
+    transform: translateY(-5px); /* Raise card on hover */
+}
+
+.skill-icon {
+    font-size: 40px; /* Icon size */
+    color: #007bff; /* Icon color */
+    margin-bottom: 10px; /* Space below icon */
+}
+
+.skill h3 {
+    margin: 10px 0; /* Space above and below heading */
+}
+
+.skill p {
+    margin-bottom: 20px; /* Space below paragraph */
+}
+
+.skill-button {
+    padding: 10px 20px; /* Button padding */
+    font-size: 16px; /* Button font size */
+    color: white; /* Button text color */
+    background-color: #007bff; /* Button background color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.skill-button:hover {
+    background-color:  #0ef; /* Darker blue on hover */
+}
+
+
+.service-container {
+    display: flex;
+    justify-content:  space-around;
+}
+
+.service-item {
+   
+    background-color: #292e33;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+     
+}
+
+.portfolio-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.portfolio-container img {
+    width: 30%; /* Adjust size as necessary */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.contact-form button {
+    background-color: #0ef;
+}
+
+.contact-form button:hover {
+    background-color: #0af; /* Darker shade for hover effect */
+}
+
+.footer-section {
+    text-align: center;
+    padding: 20px;
+}
+@media (max-width: 768px) {
+    .skill {
+        width: 45%; /* Adjust width for tablet screens */
+        margin-bottom: 20px; /* Space between cards */
+    }
+}
+
+@media (max-width: 480px) {
+    .skill {
+        width: 100%; /* Full width for mobile screens */
+        margin-bottom: 20px; /* Space between cards */
+    }
+}
+
